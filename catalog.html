@@ -17,18 +17,34 @@
           height="65" alt="Логотип дизайн-студии Нёрдс"></a>
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link" href="index.html">Студия</a></li>
-        <li class="nav__item"><a class="nav__link" href="#nowhere">Клиенты</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Клиенты</a></li>
         <li class="nav__item"><a class="nav__link nav__link--active">Магазин</a></li>
-        <li class="nav__item"><a class="nav__link" href="#nowhere">Контакты</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
       </ul>
-      <ul class="nav-backet">
-        <li class="nav-backet__item"><a class="nav-backet__link" href="#nowherenowhere">Корзина</a></li>
+      <ul class="backet">
+        <li class="backet__item"><a class="backet__link" href="">Корзина</a></li>
       </ul>
     </nav>
-    <h1 class="header__catalog-title">Магазин готовых шаблонов</h1>
+    <h2 class="header__catalog-title">Магазин готовых шаблонов</h2>
   </header>
   <main>
     <form class="filters" action="https://echo.htmlacademy.ru" method="GET">
+      <fieldset class="filters__group">
+        <legend class="filters__title">Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle--min"></div>
+            <div class="toggle toggle--max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
       <fieldset class="filters__group">
         <legend class="filters__title">Сетка:</legend>
         <ul class="filters__group-list">
@@ -74,6 +90,20 @@
       <button type="submit">Показать</button>
     </form>
     <section class="catalog">
+      <div class="sorting">
+        <h2 class="sorting__title">Сортировать:</h2>
+        <p class="visually-hidden">Сортировка по признаку</p>
+        <ul class="sorting__list">
+          <li class="sorting__item"><a href="" class="sorting__link">По цене</a></li>
+          <li class="sorting__item"><a href="" class="sorting__link">По типу</a></li>
+          <li class="sorting__item"><a href="" class="sorting__link">По названию</a></li>
+        </ul>
+        <p class="visually-hidden">Направление сортировки</p>
+        <ul class="sorting__order-list">
+          <li class="sorting__order-item"><a class="sorting_order-link sorting_order-link--descending" href=""></a></li>
+          <li class="sorting__order-item"><a class="sorting_order-link sorting__title--ascending" href=""></a></li>
+        </ul>
+      </div>
       <ul class="catalog__list">
         <li class="catalog__item">
           <img class="catalog__img" src="https://via.placeholder.com/360x576" width="360" height="576" alt="">
@@ -149,12 +179,28 @@
         </li>
       </ul>
     </section>
+    <section class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
+        <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+        <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+        <li class="pagination__item"><a href="" class="pagination__link">Следующая</a></li>
+      </ul>
+    </section>
+    <section class="contacts">
+      <h1 class="contacts__title">Nerds desing studio</h1>
+      <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+      <a class="contacts__tel" href="tel:7812275-75-75">тел. +7 (812) 275-75-75</a>
+      <a href="" class="contacts__mail">Напишите нам</a>
+      <img class="contacts__icon" src="https://via.placeholder.com/231x190" width="231" height="190"
+        alt="Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </section>
   </main>
   <footer class="footer">
     <ul class="social">
-      <li class="social__item"><a class="social__link" href="#nowhere">Вконтакте</a></li>
-      <li class="social__item"><a class="social__link" href="#nowhere">Фейсбук</a></li>
-      <li class="social__item"><a class="social__link" href="#nowhere">Инстаграм</a></li>
+      <li class="social__item"><a class="social__link" href="">Вконтакте</a></li>
+      <li class="social__item"><a class="social__link" href="">Фейсбук</a></li>
+      <li class="social__item"><a class="social__link" href="">Инстаграм</a></li>
     </ul>
     <p class="footer__title">
       <span class="footer__slogan">Давайте дружить, это выгодно!</span>
