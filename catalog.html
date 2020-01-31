@@ -28,7 +28,7 @@
     <h2 class="header__catalog-title">Магазин готовых шаблонов</h2>
   </header>
   <main>
-    <form class="filters" action="https://echo.htmlacademy.ru" method="GET">
+    <form class="filters" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="filters__group">
         <legend class="filters__title">Стоимость:</legend>
         <div class="range-filter">
@@ -78,7 +78,7 @@
             <label for="filter-news">Новости</label>
           </li>
           <li class="filters__group-item">
-            <input type="checkbox" name="" value="Gallery" id="filter-gallery">
+            <input type="checkbox" name="gallery" value="Gallery" id="filter-gallery">
             <label for="filter-gallery">Галерея</label>
           </li>
           <li class="filters__group-item">
@@ -100,8 +100,10 @@
         </ul>
         <p class="visually-hidden">Направление сортировки</p>
         <ul class="sorting__order-list">
-          <li class="sorting__order-item"><a class="sorting_order-link sorting_order-link--descending" href=""></a></li>
-          <li class="sorting__order-item"><a class="sorting_order-link sorting__title--ascending" href=""></a></li>
+          <li class="sorting__order-item"><a class="sorting__order-link sorting__order-link--descending" href=""></a>
+          </li>
+          <li class="sorting__order-item"><a class="sorting__order-link sorting__order-link--ascending" href=""></a>
+          </li>
         </ul>
       </div>
       <ul class="catalog__list">
@@ -155,35 +157,55 @@
         </li>
       </ul>
     </section>
-    <section class="pagination">
+    <div class="pagination">
       <ul class="pagination__list">
         <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
         <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
         <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
         <li class="pagination__item"><a href="" class="pagination__link">Следующая</a></li>
       </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    <section class="contacts">
+      <h1 class="contacts__title">Nerds desing studio</h1>
+      <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+      <a class="contacts__tel" href="tel:7812275-75-75">тел. +7 (812) 275-75-75</a>
+      <a href="" class="contacts__mail">Напишите нам</a>
+      <img class="contacts__icon" src="https://via.placeholder.com/231x190" width="231" height="190"
+        alt="Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
-    <footer class="footer">
-      <section class="contacts">
-        <h1 class="contacts__title">Nerds desing studio</h1>
-        <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-        <a class="contacts__tel" href="tel:7812275-75-75">тел. +7 (812) 275-75-75</a>
-        <a href="" class="contacts__mail">Напишите нам</a>
-        <img class="contacts__icon" src="https://via.placeholder.com/231x190" width="231" height="190"
-          alt="Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      </section>
-      <div class="footer-wrapper">
-        <ul class="social">
-          <li class="social__item"><a class="social__link" href="">Вконтакте</a></li>
-          <li class="social__item"><a class="social__link" href="">Фейсбук</a></li>
-          <li class="social__item"><a class="social__link" href="">Инстаграм</a></li>
-        </ul>
-        <p class="footer__title">
-          <span class="footer__slogan">Давайте дружить, это выгодно!</span>
-          <span class="footer__desc">Скидка 10% для друзей из социальных сетей.</span>
-        </p>
-      </div>
-    </footer>
+    <div class="footer-wrapper">
+      <ul class="social">
+        <li class="social__item"><a class="social__link" href="">Вконтакте</a></li>
+        <li class="social__item"><a class="social__link" href="">Фейсбук</a></li>
+        <li class="social__item"><a class="social__link" href="">Инстаграм</a></li>
+      </ul>
+      <p class="footer__title">
+        <span class="footer__slogan">Давайте дружить, это выгодно!</span>
+        <span class="footer__desc">Скидка 10% для друзей из социальных сетей.</span>
+      </p>
+    </div>
+  </footer>
+  <section class="popup">
+    <h2 class="popup__title">Напишите нам</h2>
+    <form class="popup__form" action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-message">Текст письма:</label>
+        <textarea id="user-message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="popup__submit" type="submit">Отправить</button>
+      <button class="popup__close" type="button">Закрыть</button>
+    </form>
+  </section>
 </body>
 
 </html>

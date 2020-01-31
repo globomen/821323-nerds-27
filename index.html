@@ -12,8 +12,8 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <a class="logo"><img class="logo__img" src="img/nerds-logo.svg" width="160" height="65"
-          alt="Логотип дизайн-студии Нёрдс"></a class="logo">
+      <a class="logo" href=""><img class="logo__img" src="img/nerds-logo.svg" width="160" height="65"
+          alt="Логотип дизайн-студии Нёрдс"></a>
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link">Студия</a></li>
         <li class="nav__item"><a class="nav__link" href="">Клиенты</a></li>
@@ -25,8 +25,8 @@
       </ul>
     </nav>
     <section class="slider">
-      <div class="container">
-        <h2 class="visually-hidden">Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="slider__wrapper">
         <div class="slider__controls">
           <i class="slider__control-item slider__control-item--active"></i>
           <i class="slider__control-item"></i>
@@ -55,7 +55,6 @@
     </section>
   </header>
   <main>
-    <h2 class="visually-hidden">Дизайн-студия Нёрдс</h2>
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services__list">
@@ -80,6 +79,7 @@
       </ul>
     </section>
     <section class="about">
+      <h2 class="visually-hidden">Дизайн-студия Нёрдс</h2>
       <div class="about__col-left">
         <h2 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара</h2>
         <p class="about__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
@@ -140,6 +140,25 @@
       </p>
     </div>
   </footer>
+  <section class="popup">
+    <h2 class="popup__title">Напишите нам</h2>
+    <form class="popup__form" action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-message">Текст письма:</label>
+        <textarea id="user-message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="popup__submit" type="submit">Отправить</button>
+      <button class="popup__close" type="button">Закрыть</button>
+    </form>
+  </section>
 </body>
 
 </html>
