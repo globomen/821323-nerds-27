@@ -1,3 +1,314 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url(/fonts/roboto.woff) format(woff),
+    url(/fonts/roboto.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url(/fonts/robotobold.woff) format(woff),
+    url(/fonts/robotobold.woff2) format(woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url(/fonts/robotomedium.woff) format(woff),
+    url(/fonts/robotomedium.woff2) format(woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #eeeeee;
+}
+
+.nav {
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 160px;
+  height: 65px;
+}
+
+.logo__img:hover {
+  filter: opacity(0.8);
+}
+
+.logo__img:active {
+  filter: opacity(0.3);
+}
+
+.nav__list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.nav__item:nth-child(2n) {
+  text-align: right;
+}
+
+.nav__item:hover {
+  color: #fb565a;
+}
+
+.nav__item:active {
+  color: inherit;
+
+  opacity: 0.3;
+}
+
+.nav__link--active {
+  border-bottom: 2px solid #fb565a;
+}
+
+.backet {
+  padding-left: 0;
+
+  list-style: none;
+  text-align: right;
+}
+
+.backet__item:hover {
+  color: #fb565a;
+}
+
+.backet__item:active {
+  color: inherit;
+
+  opacity: 0.3;
+}
+
+.header__catalog-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.services__list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.services__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.services__img {
+  width: 300px;
+  height: 146px;
+}
+
+.services__button {
+  width: 160px;
+  height: 50px;
+
+  font-weight: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.services__button--red {
+  background-color: #fb565a;
+}
+
+.services__button--red:hover {
+  background-color: #e74246;
+}
+
+.services__button--red:active {
+  background-color: #d7373b;
+}
+
+.services__button--green {
+  background-color: #00ca74;
+}
+
+.services__button--green:hover {
+  background-color: #00bc6c;
+}
+
+.services__button--green:active {
+  background-color: #00aa62;
+}
+
+.services__button--yellow {
+  background-color: #efc84a;
+}
+
+.services__button--yellow:hover {
+  background-color: #eab534;
+}
+
+.services__button--yellow:active {
+  background-color: #e5a722;
+}
+
+.filters {
+  line-height: 20px;
+}
+
+.filters__group {
+  border: none;
+}
+
+.filters__title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.filters__group-list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.filters__button {
+  width: 260px;
+  height: 50px;
+
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filters__button:hover {
+  background-color: #dfdfdf;
+}
+
+.filters__button:active {
+  color: #000000;
+  opacity: 0.3;
+
+  background-color: #d5d5d5;
+}
+
+.catalog__list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.catalog__cart {
+  width: 360px;
+  height: 231px;
+
+  line-height: 18px;
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.catalog__title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.catalog__title:hover {
+  color: #fb565a;
+}
+
+.catalog__title:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog__desc {
+  color: #666666;
+}
+
+.catalog__price {
+  width: 200px;
+  height: 50px;
+
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.catalog__price:hover {
+  background-color: #e74246;
+}
+
+.catalog__price:active {
+  background-color: #d7373b;
+}
+
+.social {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  width: 79px;
+  height: 79px;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social__item:hover {
+  background-color: #e74246;
+}
+
+.social__item:active {
+  background-color: #d7373b;
+}
+
+.footer__slogan {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer__desc {
+  line-height: 22px;
+  color: #444444;
+}
+
 .hidden {
   display: none;
 }
