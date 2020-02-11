@@ -110,11 +110,38 @@ a {
   opacity: 0.3;
 }
 
-.header__catalog-title {
+.slider__list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.slider__title {
   font-size: 55px;
   line-height: 55px;
+  color: #000000;
+}
+
+.slider__button {
+  width: 240px;
+  height: 50px;
+
   font-weight: 500;
-  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.slider__button:hover {
+  background-color: #e74246;
+}
+
+.slider__button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
 }
 
 .services__list {
@@ -153,6 +180,8 @@ a {
 }
 
 .services__button--red:active {
+  color: rgba(255, 255, 255, 0.3);
+
   background-color: #d7373b;
 }
 
@@ -165,6 +194,8 @@ a {
 }
 
 .services__button--green:active {
+  color: rgba(255, 255, 255, 0.3);
+
   background-color: #00aa62;
 }
 
@@ -177,7 +208,86 @@ a {
 }
 
 .services__button--yellow:active {
+  color: rgba(255, 255, 255, 0.3);
+
   background-color: #e5a722;
+}
+
+.about__title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about__services {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about__services-list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.about__img {
+  width: 360px;
+  height: 208px;
+}
+
+.table__caption {
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.table__th  {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.table__td {
+  line-height: 18px;
+}
+
+.partners__list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.contacts {
+  line-height: 18px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts__button {
+  width: 219px;
+  height: 50px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.header__catalog-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .filters {
@@ -242,6 +352,9 @@ a {
 .catalog__title {
   font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -255,6 +368,8 @@ a {
 }
 
 .catalog__desc {
+  line-height: 18px;
+  text-align: center;
   color: #666666;
 }
 
@@ -262,6 +377,9 @@ a {
   width: 200px;
   height: 50px;
 
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
   color: #ffffff;
 
   background-color: #fb565a;
