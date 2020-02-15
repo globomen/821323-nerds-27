@@ -50,15 +50,19 @@ a {
 }
 
 .nav {
-  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+
   line-height: 30px;
-  color: #000000;
+  font-weight: 500;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .logo {
   width: 160px;
   height: 65px;
+  margin-top: 50px;
 }
 
 .logo__img:hover {
@@ -69,14 +73,22 @@ a {
   filter: opacity(0.3);
 }
 
+.nav__wrapper {
+  display: flex;
+  margin-top: 57px;
+}
+
 .nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
   padding-left: 0;
 
   list-style: none;
 }
 
-.nav__item:nth-child(2n) {
-  text-align: right;
+.nav__item {
+  width: 110px;
 }
 
 .nav__item:hover {
@@ -94,10 +106,16 @@ a {
 }
 
 .backet {
+  width: 120px;
+  margin-left: 240px;
   padding-left: 0;
 
   list-style: none;
   text-align: right;
+}
+
+.backet__item {
+  width: 120px;
 }
 
 .backet__item:hover {
@@ -128,7 +146,6 @@ a {
 
   font-weight: 500;
   line-height: 18px;
-  text-transform: uppercase;
   color: #ffffff;
 
   background-color: #fb565a;
@@ -145,9 +162,20 @@ a {
 }
 
 .services__list {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
 
   list-style: none;
+}
+
+.services__item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.services__item:nth-child(3n) {
+  margin-right: 60px;
 }
 
 .services__title {
@@ -165,9 +193,7 @@ a {
   width: 160px;
   height: 50px;
 
-  font-weight: 18px;
-  text-align: center;
-  text-transform: uppercase;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -260,37 +286,22 @@ a {
   list-style: none;
 }
 
-.contacts {
-  line-height: 18px;
-}
-
-.contacts__title {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.contacts__button {
-  width: 219px;
-  height: 50px;
-
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  background-color: #fb565a;
-}
-
 .header__catalog-title {
+  margin-top: 70px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   text-align: center;
 }
 
+.catalog {
+  display: flex;
+}
+
 .filters {
+  width: 260px;
+
   line-height: 20px;
 }
 
@@ -315,7 +326,6 @@ a {
   height: 50px;
 
   line-height: 18px;
-  text-align: center;
   color: #000000;
 
   background-color: #eeeeee;
@@ -333,10 +343,57 @@ a {
   background-color: #d5d5d5;
 }
 
-.catalog__list {
+.catalog__wrapper {
+  width: 900px;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting__title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sorting__list {
+  display: flex;
   padding-left: 0;
 
   list-style: none;
+}
+
+.sorting__item {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sorting__order-list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  margin-left: 140px;
+  margin-bottom: 33px;
+}
+
+.catalog__item:nth-child(2n) {
+  margin-left: 40px;
 }
 
 .catalog__cart {
@@ -379,7 +436,6 @@ a {
 
   line-height: 18px;
   font-weight: 500;
-  text-align: center;
   color: #ffffff;
 
   background-color: #fb565a;
@@ -393,7 +449,37 @@ a {
   background-color: #d7373b;
 }
 
+.contacts {
+  line-height: 18px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts__button {
+  width: 219px;
+  height: 50px;
+
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
 .social {
+  display: flex;
+  width: 260px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
   padding-left: 0;
 
   list-style: none;
@@ -415,16 +501,42 @@ a {
   background-color: #d7373b;
 }
 
-.footer__slogan {
+.social__title {
+  width: 580px;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+
+.social__slogan {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
   color: #000000;
 }
 
-.footer__desc {
+.social__desc {
+  display: inline-block;
+  padding-top: 10px;
+
   line-height: 22px;
+  vertical-align: middle;
   color: #444444;
+}
+
+.button {
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hidden {
