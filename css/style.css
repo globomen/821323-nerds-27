@@ -507,7 +507,7 @@ a {
   border-radius: 5px;
 }
 
-.range-controls .scala {
+.range-controls .scale {
   height: 2px;
 
   background-color: #d7dcde;
@@ -797,15 +797,18 @@ a {
   opacity: 0.12;
 }
 
-.product:focus-within {
-  box-shadow: 0 6px 15px 0 rgba( 0, 1, 1, 0.25);
- }
+.product:hover.products__item::before {
+  opacity: 1;
+}
 
 .product__cart {
   position: absolute;
   content: "";
   top: 385px;
   left: 0;
+
+
+  display: none;
   width: 360px;
   padding-top: 27px;
   padding-bottom: 43px;
@@ -814,6 +817,10 @@ a {
   text-align: center;
 
   background-color: #eeeeee;
+}
+
+.product:hover .product__cart {
+  display: block;
 }
 
 .product__title {
