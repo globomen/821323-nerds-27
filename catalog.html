@@ -180,17 +180,13 @@
               </div>
             </li>
           </ul>
+          <ul class="pagination pagination__list">
+            <li class="pagination__item"><a href="" class="pagination__link pagination__link--active">1</a></li>
+            <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+            <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+            <li class="pagination__item"><a href="" class="pagination__link pagination__link--next">Следующая</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="pagination">
-      <div class="container">
-        <ul class="pagination__list">
-          <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
-          <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
-          <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
-          <li class="pagination__item"><a href="" class="pagination__link pagination__link--next">Следующая</a></li>
-        </ul>
       </div>
     </div>
   </main>
@@ -198,12 +194,12 @@
     <section class="contacts">
       <div class="container">
         <div class="contacts__wrapper">
-          <h1 class="contacts__title">Nerds desing studio</h1>
-          <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <a class="contacts__tel" href="tel:7812275-75-75">тел. +7 (812) 275-75-75</a>
-          <a class="button button contacts__button" href="">Напишите нам</a>
-          <img class="contacts__icon" src="img/map-marker.png" width="231" height="190"
-            alt="Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <div class="contacts__content">
+            <h1 class="contacts__title">Nerds desing studio</h1>
+            <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <a class="contacts__tel" href="tel:7812275-75-75">тел. +7 (812) 275-75-75</a>
+            <a class="button contacts__button" href="">Напишите нам</a>
+          </div>
         </div>
       </div>
     </section>
@@ -223,26 +219,26 @@
           <span class="social__desc">Скидка 10% для друзей из социальных сетей.</span>
         </p>
       </div>
-
     </section>
   </footer>
-  <section class="modal hidden">
-    <h2 class="modal__title">Напишите нам</h2>
+  <section class="modal modal__message hidden">
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="modal__title">Напишите нам</h2>
       <p>
-        <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        <label class="form__label" for="user-name">Ваше имя:</label>
+        <input class="form__input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        <label class="form__label" for="user-email">Ваш e-mail:</label>
+        <input class="form__input" id="user-email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p>
-        <label for="user-message">Текст письма:</label>
-        <textarea id="user-message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <label class="form__label" for="user-message">Текст письма:</label>
+        <textarea class="form__textarea" id="user-message" name="message" cols="30" rows="5"
+          placeholder="В свободной форме"></textarea>
       </p>
       <button class="button modal__submit" type="submit">Отправить</button>
-      <button class="modal__close" type="button">Закрыть</button>
+      <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </form>
   </section>
 </body>
