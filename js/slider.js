@@ -1,7 +1,7 @@
-let dots = document.querySelectorAll('.slider__control-button'),
-  dotsArea = document.querySelector('.slider__controls'),
-  slides = document.querySelectorAll('.slider__item'),
-  slideIndex = 1;
+let dots = document.querySelectorAll('.slider__control-button');
+let dotsArea = document.querySelector('.slider__controls');
+let slides = document.querySelectorAll('.slider__item');
+let slideIndex = 1;
 
 showSlides(slideIndex);
 

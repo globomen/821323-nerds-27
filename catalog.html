@@ -30,9 +30,9 @@
     </header>
     <div class="products container">
       <form class="filters" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="filter__group">
-          <legend class="filter__title">Стоимость:</legend>
-          <div class="range-filter">
+        <fieldset class="filters__group">
+          <legend class="filters__title">Стоимость:</legend>
+          <div class="range-filters">
             <div class="range-controls">
               <div class="scale">
                 <div class="bar"></div>
@@ -46,58 +46,58 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="filter__group">
-          <legend class="filter__title">Сетка:</legend>
-          <ul class="filter__group-list">
-            <li class="filter__group-item">
-              <input class="visually-hidden checked__input" type="radio" name="product-group" value="Adaptive"
-                id="filter-adaptive" checked>
-              <label class="checked__label checked__label--radio" for="filter-adaptive">Адаптивная</label>
+        <fieldset class="filters__group">
+          <legend class="filters__title">Сетка:</legend>
+          <ul class="filters__group-list">
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="radio" name="product-group" value="Adaptive"
+                id="filters-adaptive" checked>
+              <label class="checked checked__label checked__label--radio" for="filters-adaptive">Адаптивная</label>
             </li>
-            <li class="filter__group-item">
-              <input class="visually-hidden  checked__input" type="radio" name="product-group" value="Fixed"
-                id="filter-fixed">
-              <label class="checked__label checked__label--radio" for="filter-fixed">Фиксированная</label>
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="radio" name="product-group" value="Fixed"
+                id="filters-fixed">
+              <label class="checked checked__label checked__label--radio" for="filters-fixed">Фиксированная</label>
             </li>
-            <li class="filter__group-item">
-              <input class="visually-hidden  checked__input" type="radio" name="product-group" value="Rubber"
-                id="filter-rubber">
-              <label class="checked__label checked__label--radio" for="filter-rubber">Резиновая</label>
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="radio" name="product-group" value="Rubber"
+                id="filters-rubber">
+              <label class="checked checked__label checked__label--radio" for="filters-rubber">Резиновая</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter__group">
-          <legend class="filter__title">Особенности:</legend>
-          <ul class="filter__group-list">
-            <li class="filter__group-item">
-              <input class="visually-hidden checked__input" type="checkbox" name="features" value="Slider"
-                id="filter-slider" checked>
-              <label class="checked__label checked__label--checkbox" for="filter-slider">Слайдер</label>
+        <fieldset class="filters__group">
+          <legend class="filters__title">Особенности:</legend>
+          <ul class="filters__group-list">
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="checkbox" name="features" value="Slider"
+                id="filters-slider" checked>
+              <label class="checked checked__label checked__label--checkbox" for="filters-slider">Слайдер</label>
             </li>
-            <li class="filter__group-item">
-              <input class="visually-hidden checked__input" type="checkbox" name="features" value="Benefits-block"
-                id="filter-benefits-block">
-              <label class="checked__label checked__label--checkbox" for="filter-benefits-block">Блок
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="checkbox" name="features"
+                value="Benefits-block" id="filters-benefits-block">
+              <label class="checked checked__label checked__label--checkbox" for="filters-benefits-block">Блок
                 преимуществ</label>
             </li>
-            <li class="filter__group-item">
-              <input class="visually-hidden checked__input" type="checkbox" name="features" value="News"
-                id="filter-news" checked>
-              <label class="checked__label checked__label--checkbox" for="filter-news">Новости</label>
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="checkbox" name="features" value="News"
+                id="filters-news" checked>
+              <label class="checked checked__label checked__label--checkbox" for="filters-news">Новости</label>
             </li>
-            <li class="filter__group-item">
-              <input class="visually-hidden checked__input" type="checkbox" name="gallery" value="Gallery"
-                id="filter-gallery">
-              <label class="checked__label checked__label--checkbox" for="filter-gallery">Галерея</label>
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="checkbox" name="gallery" value="Gallery"
+                id="filters-gallery">
+              <label class="checked checked__label checked__label--checkbox" for="filters-gallery">Галерея</label>
             </li>
-            <li class="filter__group-item">
-              <input class="visually-hidden checked__input" type="checkbox" name="features" value="Basket"
-                id="filter-basket">
-              <label class="checked__label checked__label--checkbox" for="filter-basket">Корзина</label>
+            <li class="filters__group-item">
+              <input class="checked checked__input visually-hidden" type="checkbox" name="features" value="Basket"
+                id="filters-basket">
+              <label class="checked checked__label checked__label--checkbox" for="filters-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button class="filter__button button" type="submit">Показать</button>
+        <button class="filters__button button" type="submit">Показать</button>
       </form>
       <div class="products__wrapper">
         <div class="sorting">
@@ -121,8 +121,8 @@
               <a class="product__link" href="">
                 <h3 class="product__title">Sedona</h3>
               </a>
-              <p class="product__desc">Информационный сайт для туристов</p>
-              <a class="button product__price" href="">9 900 руб.</a>
+              <p class="product__desc">Информационный сайт<br> для туристов</p>
+              <a class="product__price button" href="">9 900 руб.</a>
             </div>
           </li>
           <li class="product products__item">
@@ -132,7 +132,7 @@
                 <h3 class="product__title">Pink App</h3>
               </a>
               <p class="product__desc">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button product__price" href="">9 900 руб.</a>
+              <a class="product__price button" href="">9 900 руб.</a>
             </div>
           </li>
           <li class="product products__item">
@@ -141,8 +141,8 @@
               <a class="product__link" href="">
                 <h3 class="product__title">Barbershop</h3>
               </a>
-              <p class="product__desc">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button product__price" href="">9 900 руб.</a>
+              <p class="product__desc">Сайт салона красоты.<br> Для мужчин, да.</p>
+              <a class="product__price button" href="">9 900 руб.</a>
             </div>
           </li>
           <li class="product products__item">
@@ -152,7 +152,7 @@
                 <h3 class="product__title">Mishka</h3>
               </a>
               <p class="product__desc">Интернет-магазин вязаных игрушек</p>
-              <a class="button product__price" href="">9 900 руб.</a>
+              <a class="product__price button" href="">9 900 руб.</a>
             </div>
           </li>
           <li class="product products__item">
@@ -162,7 +162,7 @@
                 <h3 class="product__title">A Plus</h3>
               </a>
               <p class="product__desc">Лендинг курсов повышения квалификации</p>
-              <a class="button product__price" href="">9 900 руб.</a>
+              <a class="product__price button" href="">9 900 руб.</a>
             </div>
           </li>
           <li class="product products__item">
@@ -172,7 +172,7 @@
                 <h3 class="product__title">Кваст</h3>
               </a>
               <p class="product__desc">Промо-сайт производителя крафтового кваса</p>
-              <a class="button product__price" href="">9 900 руб.</a>
+              <a class="product__price button" href="">9 900 руб.</a>
             </div>
           </li>
         </ul>
@@ -189,11 +189,11 @@
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts__wrapper container">
-        <div class="contact__content">
-          <h1 class="contact__title">Nerds desing studio</h1>
-          <p class="contact__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <a class="contact__tel" href="tel:7812275-75-75">тел. +7 (812) 275-75-75</a>
-          <a class="contact__button button" href="">Напишите нам</a>
+        <div class="contacts__content">
+          <h1 class="contacts__title">Nerds desing studio</h1>
+          <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts__tel" href="tel:7812275-75-75">тел. +7 (812) 275-75-75</a>
+          <a class="contacts__button button" href="">Напишите нам</a>
         </div>
       </div>
     </section>
@@ -220,22 +220,23 @@
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
       <h2 class="modal__title">Напишите нам</h2>
       <p>
-        <label class="form__label" for="user-name">Ваше имя:</label>
-        <input class="form__input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        <label class="form form__label" for="user-name">Ваше имя:</label>
+        <input class="form form__input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label class="form__label" for="user-email">Ваш e-mail:</label>
-        <input class="form__input" id="user-email" type="email" name="email" placeholder="email@example.com">
+        <label class="form form__label" for="user-email">Ваш e-mail:</label>
+        <input class="form form__input" id="user-email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p>
-        <label class="form__label" for="user-message">Текст письма:</label>
-        <textarea class="form__textarea" id="user-message" name="message" cols="30" rows="5"
+        <label class="form form__label" for="user-message">Текст письма:</label>
+        <textarea class="form form__textarea" id="user-message" name="message" cols="30" rows="5"
           placeholder="В свободной форме"></textarea>
       </p>
       <button class="button modal__submit" type="submit">Отправить</button>
       <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </form>
   </section>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
