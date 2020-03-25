@@ -21,9 +21,6 @@ function showSlides(n) {
   dots[slideIndex - 1].classList.add('slider__control-button--active');
 }
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 function currentSlide(n) {
   showSlides(slideIndex = n)
 }
