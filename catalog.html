@@ -37,76 +37,13 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
+              <div class="toggle toggle--min"></div>
+              <div class="toggle toggle--max"></div>
             </div>
-          </fieldset>
-          <fieldset class="filters__group">
-            <legend class="filters__title">Сетка:</legend>
-            <ul class="filters__group-list">
-              <li class="filters__group-item">
-                <input class="visually-hidden checked__input" type="radio" name="product-group" value="Adaptive"
-                  id="filter-adaptive" checked>
-                <label class="checked__label checked__label--radio" for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li class="filters__group-item">
-                <input class="visually-hidden  checked__input" type="radio" name="product-group" value="Fixed"
-                  id="filter-fixed">
-                <label class="checked__label checked__label--radio" for="filter-fixed">Фиксированная</label>
-              </li>
-              <li class="filters__group-item">
-                <input class="visually-hidden  checked__input" type="radio" name="product-group" value="Rubber"
-                  id="filter-rubber">
-                <label class="checked__label checked__label--radio" for="filter-rubber">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filters__group">
-            <legend class="filters__title">Особенности:</legend>
-            <ul class="filters__group-list">
-              <li class="filters__group-item">
-                <input class="visually-hidden checked__input" type="checkbox" name="features" value="Slider"
-                  id="filter-slider" checked>
-                <label class="checked__label checked__label--checkbox" for="filter-slider">Слайдер</label>
-              </li>
-              <li class="filters__group-item">
-                <input class="visually-hidden checked__input" type="checkbox" name="features" value="Benefits-block"
-                  id="filter-benefits-block">
-                <label class="checked__label checked__label--checkbox" for="filter-benefits-block">Блок
-                  преимуществ</label>
-              </li>
-              <li class="filters__group-item">
-                <input class="visually-hidden checked__input" type="checkbox" name="features" value="News"
-                  id="filter-news" checked>
-                <label class="checked__label checked__label--checkbox" for="filter-news">Новости</label>
-              </li>
-              <li class="filters__group-item">
-                <input class="visually-hidden checked__input" type="checkbox" name="gallery" value="Gallery"
-                  id="filter-gallery">
-                <label class="checked__label checked__label--checkbox" for="filter-gallery">Галерея</label>
-              </li>
-              <li class="filters__group-item">
-                <input class="visually-hidden checked__input" type="checkbox" name="features" value="Basket"
-                  id="filter-basket">
-                <label class="checked__label checked__label--checkbox" for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button filters__button" type="submit">Показать</button>
-        </form>
-        <div class="products__wrapper">
-          <div class="sorting">
-            <p class="sorting__title">Сортировать:</p>
-            <ul class="sorting__list" aria-label="Сортировка по признаку">
-              <li class="sorting__item"><a class="sorting__link" href="">По цене</a></li>
-              <li class="sorting__item"><a class="sorting__link" href="">По типу</a></li>
-              <li class="sorting__item"><a class="sorting__link" href="">По названию</a></li>
-            </ul>
-            <ul class="sorting__order-list" aria-label="Направление сортировки">
-              <li class="sorting__order-item"><a class="sorting__order-link sorting__order-link--descending"
-                  href=""></a>
-              </li>
-              <li class="sorting__order-item"><a class="sorting__order-link sorting__order-link--ascending" href=""></a>
-              </li>
-            </ul>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="filters__group">
